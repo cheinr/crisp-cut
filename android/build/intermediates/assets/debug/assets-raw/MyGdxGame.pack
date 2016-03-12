@@ -1,0 +1,401 @@
+
+MyGdxGame.pack.png
+size: 1024,1024
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+achievementsButtonDown
+  rotate: false
+  xy: 977, 862
+  size: 45, 49
+  orig: 45, 49
+  offset: 0, 0
+  index: -1
+achievementsButtonUp
+  rotate: false
+  xy: 977, 811
+  size: 45, 49
+  orig: 45, 49
+  offset: 0, 0
+  index: -1
+backButton
+  rotate: false
+  xy: 373, 341
+  size: 128, 64
+  orig: 128, 64
+  offset: 0, 0
+  index: -1
+backButtonDown
+  rotate: false
+  xy: 271, 390
+  size: 100, 50
+  orig: 100, 50
+  offset: 0, 0
+  index: -1
+backButtonUp
+  rotate: false
+  xy: 231, 12
+  size: 100, 50
+  orig: 100, 50
+  offset: 0, 0
+  index: -1
+beigeButtonDown
+  rotate: false
+  xy: 636, 945
+  size: 190, 49
+  orig: 190, 49
+  offset: 0, 0
+  index: -1
+beigeButtonUp
+  rotate: false
+  xy: 828, 945
+  size: 190, 49
+  orig: 190, 49
+  offset: 0, 0
+  index: -1
+bronzeMedal
+  rotate: false
+  xy: 271, 442
+  size: 100, 103
+  orig: 100, 103
+  offset: 0, 0
+  index: -1
+brownPanel
+  rotate: false
+  xy: 225, 274
+  size: 100, 100
+  split: 54, 8, 24, 32
+  pad: 35, 63, -1, -1
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+panel_brown
+  rotate: false
+  xy: 225, 274
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+conveyorBelt
+  rotate: false
+  xy: 2, 59
+  size: 93, 212
+  orig: 93, 212
+  offset: 0, 0
+  index: -1
+conveyorBeltRollers
+  rotate: false
+  xy: 263, 406
+  size: 6, 237
+  orig: 6, 237
+  offset: 0, 0
+  index: -1
+gameOverSign
+  rotate: false
+  xy: 264, 805
+  size: 444, 60
+  orig: 444, 60
+  offset: 0, 0
+  index: -1
+goldMedal
+  rotate: false
+  xy: 231, 169
+  size: 100, 103
+  orig: 100, 103
+  offset: 0, 0
+  index: -1
+gradient
+  rotate: false
+  xy: 264, 867
+  size: 370, 148
+  orig: 370, 148
+  offset: 0, 0
+  index: -1
+helpButtonDown
+  rotate: false
+  xy: 2, 7
+  size: 72, 50
+  orig: 72, 50
+  offset: 0, 0
+  index: -1
+helpButtonUp
+  rotate: false
+  xy: 616, 753
+  size: 72, 50
+  orig: 72, 50
+  offset: 0, 0
+  index: -1
+highScoresButtonDown
+  rotate: false
+  xy: 608, 652
+  size: 45, 49
+  orig: 45, 49
+  offset: 0, 0
+  index: -1
+highScoresButtonUp
+  rotate: false
+  xy: 501, 122
+  size: 45, 49
+  orig: 45, 49
+  offset: 0, 0
+  index: -1
+leaderBoardsButton
+  rotate: false
+  xy: 608, 703
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+leaderBoardsButtonDown
+  rotate: false
+  xy: 800, 816
+  size: 175, 50
+  orig: 175, 50
+  offset: 0, 0
+  index: -1
+leaderBoardsButtonUp
+  rotate: false
+  xy: 392, 520
+  size: 175, 50
+  orig: 175, 50
+  offset: 0, 0
+  index: -1
+log
+  rotate: false
+  xy: 97, 41
+  size: 65, 230
+  orig: 65, 230
+  offset: 0, 0
+  index: -1
+logBottom
+  rotate: false
+  xy: 800, 868
+  size: 161, 75
+  orig: 161, 75
+  offset: 0, 0
+  index: -1
+logBottomGreen
+  rotate: false
+  xy: 636, 867
+  size: 162, 76
+  orig: 162, 76
+  offset: 0, 0
+  index: -1
+logBottomSimple
+  rotate: false
+  xy: 392, 572
+  size: 161, 75
+  orig: 161, 75
+  offset: 0, 0
+  index: -1
+logOutline
+  rotate: false
+  xy: 164, 41
+  size: 65, 230
+  orig: 65, 230
+  offset: 0, 0
+  index: -1
+logTopGreen
+  rotate: false
+  xy: 373, 478
+  size: 161, 40
+  orig: 161, 40
+  offset: 0, 0
+  index: -1
+logTopPatch
+  rotate: false
+  xy: 373, 439
+  size: 161, 37
+  orig: 161, 37
+  offset: 0, 0
+  index: -1
+medalInlay
+  rotate: false
+  xy: 2, 376
+  size: 259, 267
+  orig: 259, 267
+  offset: 0, 0
+  index: -1
+pauseButton
+  rotate: false
+  xy: 487, 649
+  size: 119, 129
+  orig: 119, 129
+  offset: 0, 0
+  index: -1
+plankWall
+  rotate: false
+  xy: 2, 645
+  size: 260, 370
+  orig: 260, 370
+  offset: 0, 0
+  index: -1
+platinumMedal
+  rotate: false
+  xy: 231, 64
+  size: 100, 103
+  orig: 100, 103
+  offset: 0, 0
+  index: -1
+playButton
+  rotate: false
+  xy: 327, 275
+  size: 128, 64
+  orig: 128, 64
+  offset: 0, 0
+  index: -1
+plus1Icon
+  rotate: false
+  xy: 435, 75
+  size: 45, 30
+  orig: 45, 30
+  offset: 0, 0
+  index: -1
+plus3Icon
+  rotate: false
+  xy: 963, 913
+  size: 59, 30
+  orig: 59, 30
+  offset: 0, 0
+  index: -1
+rateText
+  rotate: false
+  xy: 333, 2
+  size: 128, 64
+  orig: 128, 64
+  offset: 0, 0
+  index: -1
+replayButton
+  rotate: false
+  xy: 333, 68
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+replayButtonDown
+  rotate: false
+  xy: 536, 469
+  size: 45, 49
+  orig: 45, 49
+  offset: 0, 0
+  index: -1
+replayButtonUp
+  rotate: false
+  xy: 503, 356
+  size: 45, 49
+  orig: 45, 49
+  offset: 0, 0
+  index: -1
+resumeButton
+  rotate: false
+  xy: 710, 801
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+resumeButtonDown
+  rotate: false
+  xy: 658, 702
+  size: 45, 49
+  orig: 45, 49
+  offset: 0, 0
+  index: -1
+resumeButtonUp
+  rotate: false
+  xy: 655, 651
+  size: 45, 49
+  orig: 45, 49
+  offset: 0, 0
+  index: -1
+roundButton
+  rotate: false
+  xy: 271, 547
+  size: 119, 129
+  orig: 119, 129
+  offset: 0, 0
+  index: -1
+sawBladeF1
+  rotate: false
+  xy: 264, 678
+  size: 221, 100
+  orig: 221, 100
+  offset: 0, 0
+  index: -1
+sawBladeF2
+  rotate: false
+  xy: 2, 273
+  size: 221, 101
+  orig: 221, 101
+  offset: 0, 0
+  index: -1
+sawRail
+  rotate: false
+  xy: 636, 996
+  size: 350, 19
+  orig: 350, 19
+  offset: 0, 0
+  index: -1
+sawRail3
+  rotate: false
+  xy: 264, 780
+  size: 350, 23
+  orig: 350, 23
+  offset: 0, 0
+  index: -1
+silverMedal
+  rotate: false
+  xy: 333, 170
+  size: 100, 103
+  orig: 100, 103
+  offset: 0, 0
+  index: -1
+soundOffButton
+  rotate: false
+  xy: 457, 275
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+soundOnButton
+  rotate: false
+  xy: 435, 107
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+sqBeigeButtonDown
+  rotate: false
+  xy: 536, 418
+  size: 45, 49
+  orig: 45, 49
+  offset: 0, 0
+  index: -1
+sqBeigeButtonUp
+  rotate: false
+  xy: 550, 367
+  size: 45, 49
+  orig: 45, 49
+  offset: 0, 0
+  index: -1
+targetLine
+  rotate: false
+  xy: 373, 407
+  size: 159, 30
+  orig: 159, 30
+  offset: 0, 0
+  index: -1
+touchIcon
+  rotate: false
+  xy: 555, 587
+  size: 48, 60
+  orig: 48, 60
+  offset: 0, 0
+  index: -1
+yellowPanel
+  rotate: false
+  xy: 435, 173
+  size: 100, 100
+  split: 20, 53, 8, 83
+  orig: 100, 100
+  offset: 0, 0
+  index: -1

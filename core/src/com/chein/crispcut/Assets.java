@@ -115,9 +115,9 @@ import com.chein.crispcut.Constants;
 			gameOverFontData = new BitmapFontData(Gdx.files.getFileHandle("brownFont.fnt", FileType.Internal), false);
 			plainBigFontData = new BitmapFontData(Gdx.files.getFileHandle("font.fnt", FileType.Internal), false);
 			
-			//plainBigFontData.setScale(0.75f);
-			//gameOverFontData.setScale(0.5f, 0.75f);
-			//titleFontData.setScale(0.6f, 1.2f);
+			plainBigFontData.setScale(0.75f);
+			gameOverFontData.setScale(0.5f, 0.75f);
+			titleFontData.setScale(0.6f, 1.2f);
 			
 			titleFont = new BitmapFont(titleFontData, brownFontRegion, false);
 			gameOverFont = new BitmapFont(gameOverFontData, brownFontRegion, false);

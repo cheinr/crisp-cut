@@ -2,8 +2,8 @@ package com.mygdx.game.desktop;
 
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
-import com.badlogic.gdx.tools.texturepacker.TexturePacker;
-import com.badlogic.gdx.tools.texturepacker.TexturePacker.Settings;
+//import com.badlogic.gdx.tools.texturepacker.TexturePacker;
+//import com.badlogic.gdx.tools.texturepacker.TexturePacker.Settings;
 import com.chein.crispcut.LogCutter;
 
 
@@ -13,11 +13,11 @@ public class DesktopLauncher {
 	public static void main (String[] arg) {
 		
 		if(rebuildAtlas) {
-			Settings settings = new Settings();
+			/*Settings settings = new Settings();
 			settings.maxWidth = 1024;
 			settings.maxHeight = 1024;
 			settings.debug = drawDebugOutline;
-			TexturePacker.process(settings, "assets-raw/images", "assets-raw", "MyGdxGame.pack");
+			TexturePacker.process(settings, "assets-raw/images", "assets-raw", "MyGdxGame.pack");*/
 		}
 		
 		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();

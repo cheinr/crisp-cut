@@ -15,10 +15,15 @@ import com.chein.crispcut.Message;
 import com.chein.crispcut.State;
 import com.chein.crispcut.actors.Log;
 
+/**
+ * Overlay for the game screen.
+ * @author Colin
+ *
+ */
 public class Hud extends Group {
 
 	private boolean isGameOver;
-	private String scoreStr;
+	//private String scoreStr;
 
 	private Log log;
 	private GameScreen gameScreen;
@@ -30,6 +35,12 @@ public class Hud extends Group {
 	ImageButton pauseButton;
 	//GlyphLayout scoreLayout;
 
+	/**
+	 * Creates a new Hud.
+	 * @param log
+	 * @param screen
+	 * @param logCutter
+	 */
 	public Hud(Log log, GameScreen screen, LogCutter logCutter) {
 		this.log = log;
 		this.gameScreen = screen;
@@ -82,7 +93,7 @@ public class Hud extends Group {
 	@Override
 	public void draw(Batch batch, float parentAlpha) {
 
-		scoreStr = Integer.toString(log.getScore());
+		//scoreStr = Integer.toString(log.getScore());
 		//scoreLayout.setText(Assets.instance.numbers, scoreStr);
 		
 		/*Assets.instance.numbers.draw(batch, scoreLayout,

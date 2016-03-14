@@ -10,6 +10,11 @@ import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
 import com.chein.crispcut.Assets;
 import com.chein.crispcut.Constants;
 
+/**
+ * A menu meant to show the user how to play.
+ * @author Colin
+ *
+ */
 public class HelpMenu extends Group {
 
 	private ImageButton backButton;

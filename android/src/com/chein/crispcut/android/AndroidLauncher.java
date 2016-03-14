@@ -12,29 +12,29 @@ import com.badlogic.gdx.backends.android.AndroidApplication;
 import com.badlogic.gdx.backends.android.AndroidApplicationConfiguration;
 import com.chein.crispcut.ActionResolver;
 import com.chein.crispcut.LogCutter;
-import com.google.android.gms.ads.AdRequest;
+/*import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.games.Games;
 import com.google.example.games.basegameutils.GameHelper;
-import com.google.example.games.basegameutils.GameHelper.GameHelperListener;
+import com.google.example.games.basegameutils.GameHelper.GameHelperListener;*/
 
 public class AndroidLauncher extends AndroidApplication implements
 		ActionResolver, GameHelperListener {
 
-	private GameHelper gameHelper;
+/*	private GameHelper gameHelper;
 	protected AdView adView;
-	protected View gameView;
+	protected View gameView;*/
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		AndroidApplicationConfiguration config = new AndroidApplicationConfiguration();
 
-		// initialize(new LogCutter(this), config);
+		initialize(new LogCutter(this), config);
 
 		// Do the stuff that initialize() would do for you
-		requestWindowFeature(Window.FEATURE_NO_TITLE);
+		/*requestWindowFeature(Window.FEATURE_NO_TITLE);
 		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
 				WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		getWindow().clearFlags(
@@ -58,10 +58,10 @@ public class AndroidLauncher extends AndroidApplication implements
 		layout.addView(gameView);
 
 		setContentView(layout);
-		startAdvertising(admobView);
+		startAdvertising(admobView);*/
 	}
 
-	private void startAdvertising(AdView admobView) {
+	/*private void startAdvertising(AdView admobView) {
 		AdRequest adRequest = new AdRequest.Builder().build();
 	    adView.loadAd(adRequest);
 	}
@@ -75,12 +75,12 @@ public class AndroidLauncher extends AndroidApplication implements
 		params.addRule(RelativeLayout.BELOW, adView.getId());
 		gameView.setLayoutParams(params);
 		return gameView;
-	}
+	}*/
 
-	private AdView createAdView() {
+/*	private AdView createAdView() {
 	    adView = new AdView(this);
 	    adView.setAdSize(AdSize.SMART_BANNER);
-	    adView.setAdUnitId("ca-app-pub-8662347012964940/8557024917");// TODO
+	    adView.setAdUnitId("");// TODO
 	    adView.setId(12345); // this is an arbitrary id, allows for relative positioning in createGameView()
 	    RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
 	    params.addRule(RelativeLayout.ALIGN_PARENT_TOP, RelativeLayout.TRUE);
@@ -88,7 +88,7 @@ public class AndroidLauncher extends AndroidApplication implements
 	    adView.setLayoutParams(params);
 	    adView.setBackgroundColor(Color.BLACK);
 	    return adView;
-	}
+	}*/
 
 	@Override
 	public boolean getSignedInGPGS() {
@@ -126,7 +126,7 @@ public class AndroidLauncher extends AndroidApplication implements
 		if (gameHelper.isSignedIn()) {
 			startActivityForResult(
 					Games.Leaderboards.getLeaderboardIntent(
-							gameHelper.getApiClient(), "CgkIvOjfrrsUEAIQDQ"),
+							gameHelper.getApiClient(), "" /* Your leaderboard number */),
 					100);
 		} else if (!gameHelper.isConnecting()) {
 			loginGPGS();

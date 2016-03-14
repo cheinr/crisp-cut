@@ -20,6 +20,11 @@ import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
 import com.badlogic.gdx.utils.viewport.StretchViewport;
 import com.chein.crispcut.ui.HelpMenu;
 
+/**
+ * The screen for the main menu.
+ * @author Colin
+ *
+ */
 public class MainMenuScreen extends ScreenAdapter implements InputProcessor {
 
 	LogCutter game;
@@ -56,6 +61,10 @@ public class MainMenuScreen extends ScreenAdapter implements InputProcessor {
 	int buttonHeight = 50;
 	int buttonGap = 15; // gap between buttons
 
+	/**
+	 * Creates a new MainMenuScreen with the instance of LogCutter given.
+	 * @param game
+	 */
 	public MainMenuScreen(LogCutter game) {
 
 		this.game = game;

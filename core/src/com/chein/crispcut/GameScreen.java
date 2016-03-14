@@ -19,6 +19,11 @@ import com.chein.crispcut.actors.CutLabels;
 import com.chein.crispcut.ui.GameOverMenu;
 import com.chein.crispcut.ui.Hud;
 
+/**
+ * The main screen of the game.
+ * @author Colin
+ *
+ */
 public class GameScreen extends ScreenAdapter implements InputProcessor {
 
 	private LogCutter game;
@@ -89,7 +94,6 @@ public class GameScreen extends ScreenAdapter implements InputProcessor {
 		startLabel.addAction(Actions.alpha(0f));
 		startLabel.act(0);
 
-		// Assets.instance.brownFont.setScale(0.5f, 0.75f);TODO
 		Label.LabelStyle brownStyle = new LabelStyle(
 				Assets.instance.gameOverFont, Color.WHITE);
 

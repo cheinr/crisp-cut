@@ -18,7 +18,11 @@ import com.badlogic.gdx.graphics.Texture.TextureFilter;
 import com.chein.crispcut.Constants;
 
 
-
+	/** 
+	 * A singleton class that handles asset loading.
+	 * @author Colin
+	 *
+	 */
 	public class Assets implements Disposable, AssetErrorListener {
 		
 		public static final String TAG = Assets.class.getName();

@@ -1,28 +1,30 @@
 package com.chein.crispcut.actors;
 
-import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.Texture.TextureWrap;
-//import com.badlogic.gdx.graphics.Texture.TextureWrap;
 import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.graphics.g2d.Sprite;
-import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.scenes.scene2d.Actor;
-import com.badlogic.gdx.scenes.scene2d.utils.TiledDrawable;
 import com.chein.crispcut.Assets;
 import com.chein.crispcut.Constants;
 
+/**
+ * The Background of the game; includes the conveyor belt.
+ * @author Colin
+ *
+ */
 public class BackDrop extends Actor{
 	
 	float x, y, width, height, fallSpeed, scrollSpeed;
-	
-	Sprite lightConcreteSprite;
 
 	TextureRegion lightConcreteRegion;
 	TextureRegion gradientRegion;
 	
 	TextureRegion conveyorBeltRegion;
 	
+	
+	
+	Sprite lightConcreteSprite;
 	Sprite conveyorBeltSprite;
 	Sprite conveyorBeltSprite2;
 	Sprite sawRailSprite;
@@ -32,7 +34,14 @@ public class BackDrop extends Actor{
 	
 	float scrollTimer = 0;
 	
-	
+	/**
+	 * Creates a new Backdrop with the position and dimensions given.
+	 * 
+	 * @param x
+	 * @param y
+	 * @param width
+	 * @param height
+	 */
 	public BackDrop(float x, float y, float width, float height) {
 		this.x = x;
 		this.y = y;
@@ -80,7 +89,6 @@ public class BackDrop extends Actor{
 		scrollTimer -= deltaTime*scrollSpeed;
 		
 	
-		
 		conveyorBeltSprite.setV(scrollTimer);
 		conveyorBeltSprite.setV2((scrollTimer+1));
 		
@@ -98,6 +106,10 @@ public class BackDrop extends Actor{
 		gradient2.draw(batch);
 	}
 	
+	/**
+	 * Changes the speed of the conveyor belt.
+	 * @param speed
+	 */
 	public void setFallSpeed(float speed) {
 		this.fallSpeed = speed;
 	}

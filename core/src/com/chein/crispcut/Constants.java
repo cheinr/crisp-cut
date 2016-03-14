@@ -1,5 +1,10 @@
 package com.chein.crispcut;
 
+/**
+ * Constants used throughout the game.
+ * @author Colin
+ *
+ */
 public class Constants {
 	
 public static final String SHARED_PREFERENCES = "Preferences";

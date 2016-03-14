@@ -10,6 +10,11 @@ import com.badlogic.gdx.utils.Array;
 import com.chein.crispcut.Assets;
 import com.chein.crispcut.Constants;
 
+/**
+ * A saw blade that spins and can slide to cut the log.
+ * @author Colin
+ *
+ */
 public class SawBlade extends Actor {
 
 	float x;

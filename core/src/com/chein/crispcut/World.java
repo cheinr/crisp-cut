@@ -7,6 +7,11 @@ import com.chein.crispcut.actors.Log;
 import com.chein.crispcut.actors.SawBlade;
 import com.chein.crispcut.ui.Hud;
 
+/**
+ * 
+ * @author Colin
+ *
+ */
 public class World extends Group {
 
 	public Log log;

@@ -9,6 +9,11 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.glutils.FrameBuffer;
 import com.chein.crispcut.LogCutter;
 
+/**
+ * A screen that creates a sliding effect between two other screens.
+ * @author Colin
+ *
+ */
 public class TransitionScreen implements Screen {
 
 	
@@ -71,12 +76,6 @@ public class TransitionScreen implements Screen {
 	}
 
 	@Override
-	public void resize(int width, int height) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
 	public void show() {
 		//batch.setProjectionMatrix(cam.combined);
 		index = 0;
@@ -111,7 +110,7 @@ public class TransitionScreen implements Screen {
 	}
 
 	@Override
-	public void hide() {
+	public void resize(int width, int height) {
 		// TODO Auto-generated method stub
 		
 	}
@@ -129,9 +128,14 @@ public class TransitionScreen implements Screen {
 	}
 
 	@Override
-	public void dispose() {
+	public void hide() {
 		// TODO Auto-generated method stub
 		
 	}
 
+	@Override
+	public void dispose() {
+		// TODO Auto-generated method stub
+		
+	}
 }

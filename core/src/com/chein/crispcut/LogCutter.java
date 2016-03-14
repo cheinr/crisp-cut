@@ -9,6 +9,7 @@ import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.chein.crispcut.ui.TransitionScreen;
 
+
 public class LogCutter extends Game{
 	
 	ActionResolver actionResolver;

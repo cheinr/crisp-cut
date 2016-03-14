@@ -15,6 +15,11 @@ import com.chein.crispcut.GameScreen;
 import com.chein.crispcut.LogCutter;
 import com.chein.crispcut.MainMenuScreen;
 
+/**
+ * The menu that appears when the game is lost.
+ * @author Colin
+ *
+ */
 public class GameOverMenu extends InputAdapter {
 	float x, y, width, height;
 
@@ -43,6 +48,15 @@ public class GameOverMenu extends InputAdapter {
 	Rectangle mainMenuButton;
 	Rectangle replayButton;
 
+	/**
+	 * Creates a new Game Over menu.
+	 * @param guiCam
+	 * @param game
+	 * @param width
+	 * @param height
+	 * @param score
+	 * @param highScore
+	 */
 	public GameOverMenu(OrthographicCamera guiCam, LogCutter game, int width,
 			int height, int score, int highScore) { // Constructor for gameOver
 													// menu
@@ -91,6 +105,11 @@ public class GameOverMenu extends InputAdapter {
 		update(0);
 	}
 
+	
+	/**
+	 * Updates the menu.
+	 * @param deltaTime
+	 */
 	public void update(float deltaTime) {
 		this.x = guiCam.position.x - width / 2 + 0.5f;
 		this.y = guiCam.position.y - height / 1.5f;
@@ -100,9 +119,13 @@ public class GameOverMenu extends InputAdapter {
 				- mainMenuButton.height - 5);
 		replayButton.setPosition(x + width / 2 - replayButton.width / 2, y
 				- replayButton.height - mainMenuButton.height - 10);
-
 	}
 
+	/**
+	 * Draws the menu.
+	 * @param batch
+	 * @param camera
+	 */
 	public void draw(SpriteBatch batch, OrthographicCamera camera) {
 
 		batch.setProjectionMatrix(guiCam.combined);

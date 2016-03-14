@@ -10,6 +10,11 @@ import com.badlogic.gdx.scenes.scene2d.ui.Label.LabelStyle;
 import com.chein.crispcut.Assets;
 import com.chein.crispcut.Message;
 
+/**
+ * A collection of messages to display on the screen when the user has made a cut.
+ * @author Colin
+ *
+ */
 public class CutLabels extends Group{
 	
 	private Label perfectLabel;
@@ -19,6 +24,9 @@ public class CutLabels extends Group{
 	
 	ArrayList<Label> labels = new ArrayList<Label>();
 	
+	/**
+	 * Default Constructor - Creates Labels of different colors and messages.
+	 */
 	public CutLabels() {
 		
 		Label.LabelStyle redStyle = new LabelStyle(Assets.instance.redFont, Color.WHITE);
@@ -45,6 +53,10 @@ public class CutLabels extends Group{
 		
 	}
 	
+	/**
+	 * Flashes the label on the screen by fading the appropriate label in and then back out.
+	 * @param message
+	 */
 	public void showLabel(Message message) {
 		switch(message) {
 		case BAD:
@@ -68,6 +80,10 @@ public class CutLabels extends Group{
 			
 	}
 
+	/**
+	 * Checks if any labels should be seen on the screen at any moment.
+	 * @return
+	 */
 	public boolean isLabelBeingDrawn() {
 		for(int i=0; i<labels.size(); i++) {
 			if(labels.get(i).getColor().a != 0) {

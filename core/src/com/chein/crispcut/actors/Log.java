@@ -8,6 +8,11 @@ import com.badlogic.gdx.scenes.scene2d.Group;
 import com.chein.crispcut.Assets;
 import com.chein.crispcut.Message;
 
+/**
+ * A falling log with a target to be cut at.
+ * @author Colin
+ *
+ */
 public class Log extends Group{
 	
 	float cutAccuracy;// the distance a cut is made from the target line.
@@ -72,6 +77,13 @@ public class Log extends Group{
 	java.util.Random r = new java.util.Random();
 	
 
+	/**
+	 * Creates a new log with the position and dimensions given.
+	 * @param x
+	 * @param y
+	 * @param width
+	 * @param height
+	 */
 	public Log(float x, float y, float width, float height){
 		this.x = x;
 		this.y = y;
@@ -84,7 +96,7 @@ public class Log extends Group{
 		init();
 	}
 	
-	public void init() {
+	private void init() {
 		assembleLog();
 		message = Message.NONE;
 		targetYAdj = MathUtils.random(2.5f, 11.25f);
@@ -138,6 +150,10 @@ public class Log extends Group{
 		init();
 	}
 
+	/**
+	 * Checks if the log is on the screen.
+	 * @return
+	 */
 	public boolean onScreen() {
 		if(y < 0 - height){
 			return false;
@@ -188,7 +204,9 @@ public class Log extends Group{
 		logBottomSprite.setBounds((float) x, (float) logBoty, (float) width, (float) logBottomSpriteScreenHeight);
 	}
 
-	//Splits the log in half - kind've messy
+	/**
+	 * Cut the log at the position that is at the y position '4'.
+	 */
 	public void split() {
 		int splitTexHeight;
 		
@@ -276,60 +294,103 @@ public class Log extends Group{
 	
 	
 	//Getters and setters
-	
-/*	public int getLifePoints() {
-		return lifePoints;
-	}*/	
-	
+	/**
+	 * Gets the number of times the log has been cut perfectly on the line.
+	 * @return
+	 */
 	public int getNumPerfectCuts() {
 		return numPerfectCuts;
 	}
 
+	/**
+	 * Checks is the log has been cut.
+	 * @return
+	 */
 	public boolean isCut() {
 		return logCut;
 	}
 	
+	/**
+	 * Gets the current score for the user.
+	 * @return
+	 */
 	public int getScore() {
 		return score;
 	}
 	
+	/**
+	 * Checks if the log is falling.
+	 * @return
+	 */
 	public boolean getFalling() {
 		return falling;
 	}
 	
+	/**
+	 * Sets whether the log is falling or not.
+	 * @param b
+	 */
 	public void setFalling(boolean b) {
 		falling = b;
 	}
 
+	/**
+	 * Gets the y position of the log.
+	 */
 	public float getY() {
 		return this.y;
 	}
 	
+	/**
+	 * Gets the x position of the log.
+	 */
 	public float getX() {
 		return this.x;
 	}
 
+	/**
+	 * Gets the fall speed of the log.
+	 * @return
+	 */
 	public float getFallSpeed() {
 		return this.fallSpeed;
 	}
 	
+	/**
+	 * Checks whether the last cut was considered "perfect".
+	 * @return
+	 */
 	public boolean isPerfectCut() {
 		return perfectCut;
 	}
 
-
+	/**
+	 * Gets the message that should be displayed about the last cut.
+	 * @return
+	 */
 	public  Message getMessage() {
 		return message;
 	}
 
-
+	/**
+	 * Sets the message that should be displayed about the last cut.
+	 * @param a
+	 */
 	public void setMessage(Message a) {
 		message = a;
 	}
 	
+	/**
+	 * @return Whether or not the last log was cut at all.
+	 */
 	public boolean getLogIgnored() {
 		return logIgnored;
 	}
+	
+	/**
+	 * @param b
+	 *  - Whether of not the last log was cut at all.
+	 */
 	public void setLogIgnored(boolean b) {
 		this.logIgnored = b;
 	}
@@ -343,10 +404,18 @@ public class Log extends Group{
 		
 	}
 
+	/**
+	 * Checks whether the log's speed has changed.
+	 * @return
+	 */
 	public boolean speedChanged() {
 		return speedChanged;
 	}
 	
+	/**
+	 * Sets whether the log's speed has changed.
+	 * @param b
+	 */
 	public void setSpeedChanged(boolean b) {
 		speedChanged = b;
 	}

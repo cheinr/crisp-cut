@@ -1,9 +1,7 @@
 package com.chein.crispcut.ui;
 
 import com.badlogic.gdx.graphics.OrthographicCamera;
-import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
-//import com.badlogic.gdx.graphics.g2d.GlyphLayout;
 import com.badlogic.gdx.math.Vector3;
 import com.badlogic.gdx.scenes.scene2d.Group;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
@@ -17,6 +15,13 @@ import com.chein.crispcut.LogCutter;
 import com.chein.crispcut.MainMenuScreen;
 import com.chein.crispcut.State;
 
+
+/**
+ * A menu for when the user pauses the game.
+ * 
+ * @author Colin
+ *
+ */
 public class GamePausedMenu extends Group {
 
 	float x, y, width, height;
@@ -40,6 +45,11 @@ public class GamePausedMenu extends Group {
 	boolean visible;
 
 
+	/**
+	 * Creates a menu using the given GameScreen for the given LogCutter game.
+	 * @param screen
+	 * @param logCutter
+	 */
 	public GamePausedMenu(GameScreen screen, LogCutter logCutter) {
 
 		this.gameScreen = screen;
@@ -67,13 +77,6 @@ public class GamePausedMenu extends Group {
 		resumeButton.addListener(new ClickListener() {
 			@Override
 			public void clicked(InputEvent event, float x, float y) {
-				
-				
-			/*	
-				if(game.isGameMuted() == false) { 
-					Assets.instance.beltSound.resume();
-					
-				}*/
 				
 				gameScreen.setState(State.PLAYING);
 				
@@ -130,20 +133,6 @@ public class GamePausedMenu extends Group {
 		super.act(deltaTime);
 	}
 
-	@Override
-	public void draw(Batch batch, float parentAlpha) {
-
-		//font.draw
-		
-		/*//Assets.instance.assetGUI.yellowPanelNine.draw(batch,
-				Constants.VIEWPORT_WIDTH / 2 - layout.width
-						/ 2 - 15, Constants.VIEWPORT_HEIGHT / 2 - 10, 200, 70);
-		font.draw(batch, layout, x + width / 2
-				- layout.width / 2,
-				y + height + layout.height / 2);*/
-
-		super.draw(batch, parentAlpha);
-	}
 	
 	@Override
 	public void setVisible(boolean b) {

@@ -11,6 +11,11 @@ import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
 import com.badlogic.gdx.utils.viewport.StretchViewport;
 
+/**
+ * A screen that displays the Users's high scores.
+ * @author Colin
+ *
+ */
 public class HighScoresScreen implements Screen{
 
 	LogCutter game;

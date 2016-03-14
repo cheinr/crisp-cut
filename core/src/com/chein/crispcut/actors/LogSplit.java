@@ -6,6 +6,12 @@ import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.chein.crispcut.Assets;
 
+/**
+ * The bottom part of a log after it has been cut.
+ * Hoping to get rid of this class.
+ * @author Colin
+ *
+ */
 public class LogSplit extends Actor{
 
 	float x;

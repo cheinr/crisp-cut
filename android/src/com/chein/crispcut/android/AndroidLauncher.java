@@ -111,7 +111,7 @@ public class AndroidLauncher extends AndroidApplication implements
 	@Override
 	public void submitScoreGPGS(int score) {
 		Games.Leaderboards.submitScore(gameHelper.getApiClient(),
-				"CgkIvOjfrrsUEAIQBg", score);
+				"<your GPGS leaderboards id here>", score);
 
 	}
 

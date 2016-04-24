@@ -11,3 +11,6 @@ with exception to the panels, buttons, and fonts, which are all by kenney.nl.
 The game was mostly written while I was first learning to program, and I've added it to 
 github in its messy state. I'm planning on cleaning it up a lot and adding documentation 
 for some of the functions.
+
+Google Play Link:
+https://play.google.com/store/apps/details?id=com.chein.crispcut.android

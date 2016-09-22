@@ -13,4 +13,4 @@ github in its messy state. I'm planning on cleaning it up a lot and adding docum
 for some of the functions.
 
 Google Play Link:
-https://play.google.com/store/apps/details?id=com.chein.crispcut.android
+https://play.google.com/store/apps/details?id=com.chein.crispcut2.android
